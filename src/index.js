@@ -43,10 +43,9 @@ window.onload = () => {
       'https://catwalk.vercel.app', {
          view: 'button',
          parentId: 'container',
-         buttonView: 'main',
          buttonTheme: 'dark',
          buttonSize: 'l',
-         buttonBorderRadius: 15
+      buttonBorderRadius: 15
          }
    )
    .then(({ handler }) => handler())
