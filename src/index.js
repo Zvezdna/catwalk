@@ -17,7 +17,22 @@ const fetchYandexData = (token) =>
 
 window.onload = () => {
   document.getElementById("suggest").onclick = () => {
-    // TODO suggest
+    YaAuthSuggest.init({
+         client_id: '41510d875ac042e78e9fab96ccda4ac0',
+         response_type: 'token',
+         redirect_uri: 'https://catwalk.vercel.app/token.html'
+      },
+      'https://catwalk.vercel.app'
+   )
+   .then(({ handler }) => handler())
+      .then(async (data) => {
+        const result = await fetchYandexData(data.access_token);
+
+        authorize(result);
+
+        console.log(result, data);
+      })
+      .catch((error) => console.log("Что-то пошло не так: ", error));
   };
   document.getElementById("button").onclick = () => {
     // TODO button
