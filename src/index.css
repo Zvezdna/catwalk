@@ -1,16 +1,18 @@
+.body {
+  background-image: url("images/uEAAAgPp1eA-1920.jpg");
+}
+
 .auth {
   display: flex;
   align-items: center;
   padding: 24px;
 }
-
 .avatar {
   width: 40px;
   height: 40px;
   margin-right: 8px;
   border-radius: 50%;
 }
-
 .name {
   font-size: 40px;
   font-weight: bold;
@@ -18,20 +20,16 @@
   color: #87cefa;
  text-align: center;
 }
-
 .button {
   margin-bottom: 8px;
 }
-
 .buttons {
   display: flex;
   margin-top: 8px;
 }
-
 #suggest {
   margin-right: 8px;
 }
-
 .buttonsContainer {
   margin-top: 8px;
   width: 300px;
