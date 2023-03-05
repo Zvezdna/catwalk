@@ -1,3 +1,7 @@
 window.onload = () => {
-  // TODO
+  YaSendSuggestToken(
+   'https://catwalk.vercel.app', {
+      flag: true
+   }
+)
 };
