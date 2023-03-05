@@ -46,7 +46,7 @@ window.onload = () => {
          buttonView: 'additional',
          buttonTheme: 'dark',
          buttonSize: 's',
-         buttonBorderRadius: 30
+         buttonBorderRadius: 15
          }
    )
    .then(({ handler }) => handler())
