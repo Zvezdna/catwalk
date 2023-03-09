@@ -29,6 +29,9 @@ html {
 .button {
   margin-bottom: 8px;
 }
+.button onclick {
+  margin-bottom: 8px;
+}
 .buttons {
   display: flex;
   margin-top: 8px;
